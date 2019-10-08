@@ -1,1 +1,26 @@
-
+<html>
+<body>
+<h1>Question B1</h1>
+<h2>Write a function that takes the classroom data and returns an array of objects.  Each object will have two attributes: a picture and the final grade in the class.</h2>
+<p>var getData = function(penguin)</p>
+<p>{
+        var obj = {};
+        obj.img = penguin.picture;
+        obj.fin = penguin.final;
+        return obj;
+    };</p>
+    <p>var answer = classroom.map(getData);</p>
+<h3>What it Does</h3>
+    <p>We are creating a function, named getData, that places a given penguins picture and final into the variable obj which is just an empty object. It then returns this object. We put this into the classroom.map() element which repeats this process leading to an array filled with these objects.</p>
+<h1>Question C1</h1>
+<h2>Write a function to find the average grade of all students on the first quiz.</h2>
+    <p>var getFirst = function(penguin)</p>
+    <p>{
+        var quiz = penguin.quizes[0].grade;
+        return quiz
+        };</p>
+    <p>var answer=(d3.mean(classroom.map(getFirst)));</p>
+<h3>What it Does</h3>
+    <p>We are creating a function, named getFirst, that when given a penguin takes that penguin and grabs the first quiz grade and returns that grade. We then take the mean of these quizes by using a .map element and the previously mentioned getFirst function. I will say, I tried to do this multiple times, and it never seemed to work. I can't exactly tell you why it worked this time, but not others.</p>
+</body>
+</html>
